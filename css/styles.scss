@@ -1,0 +1,44 @@
+// Framework
+@import 'bulma';
+
+h1 {
+	font-family: 'Codystar', cursive;
+	font-size: 48px;
+	color: white;
+	animation: flash 10s infinite;
+	position: relative;
+	align-content: center;
+}
+
+body {
+	background: black;
+	// background-image: url('img/wristwatch-shows-solar-system-planets-orbiting-around-the-sun-10.jpg');
+	width: 100%;
+}
+
+section {
+	padding: 2em;
+}
+
+p, h2 {
+	color: white;
+}
+
+
+// video {
+// 	height: 100%;
+// 	width: 100%;
+// 	position: absolute;
+// }
+
+// Light Gallery Base Styling
+@import 'lightgallery';
+
+a img {
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
+}
+
+// Light Gallery Animations
+@import 'lg-transitions';
