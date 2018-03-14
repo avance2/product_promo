@@ -1,6 +1,6 @@
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 
-@import url("https://fonts.googleapis.com/css?family=Codystar|Abel|Josefin+Slab|Lato|Lora|Nanum+Myeongjo");
+@import url("https://fonts.googleapis.com/css?family=Codystar|Abel|Josefin+Slab|Lato|Lora|Nanum+Myeongjo|Playfair+Display");
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -11121,8 +11121,7 @@ print {
 /*# sourceMappingURL=bulma.css.map */
 
 body {
-  background: black url("..img/starry_night6.jpg");
-  width: 100%;
+  background: black url("../img/bg.gif") no-repeat bottom;
 }
 
 h1 {
@@ -11144,12 +11143,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Josefin Slab', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 24px;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
 }
 
 section {
@@ -11160,8 +11159,6 @@ section {
 p,
 h2 {
   color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 1em 2em 1em 2em;
 }
 
 video {
