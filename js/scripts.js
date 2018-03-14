@@ -1,7 +1,7 @@
-console.log('Be like Browser.');
-
-// $('video').tubular({videoId : 'sw5S2-T-Ogk',
+// $('div').tubular({videoId : 'sw5S2-T-Ogk',
 // });
+
+
 
 // Light Gallery
 $('#gallery-1').lightGallery();
@@ -15,4 +15,73 @@ $('#example-3').elevateZoom({
   lensShape : "round",
   lensSize : 200
 });
+
+
+// Video Player
+// $('video').mediaelementplayer();
+
+// // Code from: Jonathan Gotti https://codepen.io/malko/pen/Eyxep
+// $(function(){
+// 		var zIndex= 1, endTop=0, endLeft=450;
+
+// 		function randRotation(el){
+// 			var rot = Math.round( Math.random() * 90-45);
+// 			return $(el).css({
+// 				'-webkit-transform':'rotate('+rot+'deg)'
+// 				,'-moz-transform':'rotate('+rot+'deg)'
+// 				,'transform':'rotate('+rot+'deg)'
+// 			});
+// 		}
+
+// 		$('.gallery li').each(function(){
+// 			randRotation(this).css({
+// 				top:Math.round(Math.random()*50-25)
+// 				,left:Math.round(Math.random()*50-25)
+// 				,'zIndex': zIndex++
+// 			})
+// 			.click(function(){
+// 				var myZindex = $(this).css('zIndex');
+// 				$('.gallery li').not(this).each(function(){
+// 					if( $(this).css('zIndex') > myZindex ){
+// 						$(this).css('zIndex',$(this).css('zIndex')-1);
+// 					}
+// 				});
+// 				if(! $(this).is('.active')){
+// 					$(this).toggleClass('active')
+// 					.animate({
+// 						top:endTop
+// 						,left:endLeft
+// 					})
+// 					.css({zIndex:$('.gallery li').length });
+// 					var activated=$('.gallery .active').not(this);
+// 					activated.length && activated.click();
+// 				}else{
+// 					$('.gallery li').each(function(){$(this).css('zIndex',parseInt($(this).css('zIndex'),10)+1)});
+// 					randRotation($(this).toggleClass('active'))
+// 					.animate({
+// 						top:Math.round(Math.random()*50-25)
+// 						,left:Math.round(Math.random()*50-25)
+// 					}).css({zIndex:1});
+// 				}
+// 			});
+// 		});
+// 	});
+// $('button').click(function(){
+	
+// 	$('div').toggleClass('show');
+	
+// });
+
+// $('button').click(function(){
+	
+// 	$('div').toggleClass('show');
+	
+// });
+
+// $('button').click(function(){
+	
+// 	$('div').toggleClass('show');
+	
+// });
+
 

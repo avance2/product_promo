@@ -1,5 +1,6 @@
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
 
+@import url("https://fonts.googleapis.com/css?family=Codystar|Abel|Josefin+Slab|Lato|Lora|Nanum+Myeongjo");
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -11119,27 +11120,61 @@ print {
 
 /*# sourceMappingURL=bulma.css.map */
 
-h1 {
-  font-family: 'Codystar', cursive;
-  font-size: 48px;
-  color: white;
-  animation: flash 10s infinite;
-  position: relative;
-  align-content: center;
+body {
+  background: black url("..img/starry_night6.jpg");
+  width: 100%;
 }
 
-body {
-  background: black;
+h1 {
+  font-family: 'Codystar', cursive;
+  font-size: 60px;
+  color: white;
+  animation: flash 10s infinite;
+}
+
+.jewels img {
+  margin-top: 10em;
   width: 100%;
+  background-color: black;
+  border-radius: 100px;
+}
+
+.jewels img:hover {
+  transform: scale(3);
+}
+
+h2 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 24px;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
 }
 
 section {
   padding: 2em;
+  margin: 1em;
 }
 
 p,
 h2 {
   color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1em 2em 1em 2em;
+}
+
+video {
+  width: 100%;
+  margin: 3em 0 3em 0;
+}
+
+.footer {
+  background-color: black;
+}
+
+.back {
+  transform: scale(1.5);
 }
 
 /*! lightgallery - v1.6.4 - 2017-10-29
@@ -12292,6 +12327,11 @@ a img {
   height: 100px;
   width: 100px;
   overflow: hidden;
+}
+
+.main {
+  width: 100%;
+  height: 400px;
 }
 
 .lg-css3.lg-zoom-in .lg-item {

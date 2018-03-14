@@ -1,34 +1,77 @@
 // Framework
 @import 'bulma';
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Codystar|Abel|Josefin+Slab|Lato|Lora|Nanum+Myeongjo');
+// video
+// @import "mediaplayer.min";
+
+body {
+	background: black url('..img/starry_night6.jpg');
+	width: 100%;
+}
 
 h1 {
 	font-family: 'Codystar', cursive;
-	font-size: 48px;
+	font-size: 60px;
 	color: white;
 	animation: flash 10s infinite;
-	position: relative;
-	align-content: center;
 }
 
-body {
-	background: black;
-	// background-image: url('img/wristwatch-shows-solar-system-planets-orbiting-around-the-sun-10.jpg');
+.jewels img {
+	margin-top: 10em;
 	width: 100%;
+	background-color: black;
+	border-radius: 100px;
+}
+
+.jewels img:hover {
+    transform: scale(3);
+}
+
+h2 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 24px;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
 }
 
 section {
 	padding: 2em;
+	margin: 1em;
 }
 
 p, h2 {
 	color: white;
+	background-color: rgba(255, 255, 255, .5);
+	padding: 1em 2em 1em 2em;
 }
 
 
-// video {
-// 	height: 100%;
-// 	width: 100%;
-// 	position: absolute;
+video {
+	width: 100%;
+	margin: 3em 0 3em 0;
+}
+
+.footer {
+	background-color: black;
+}
+
+.back {
+	transform: scale(1.5)
+}
+
+// .info {
+// 	// background: rgba(255, 255, 255, .5);
+// 	// height: 100%;
+// 	// width: 100%;
+// 	// overflow: hidden;
+// 	// transition: height .5s;
+// }
+
+// .show {
+// 	height: 700px;
 // }
 
 // Light Gallery Base Styling
@@ -39,6 +82,12 @@ a img {
 	width: 100px;
 	overflow: hidden;
 }
+
+.main {
+	width: 100%;
+	height: 400px;
+}
+
 
 // Light Gallery Animations
 @import 'lg-transitions';
