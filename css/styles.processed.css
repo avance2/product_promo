@@ -11142,6 +11142,11 @@ h1 {
   transform: scale(3);
 }
 
+.types p {
+  font-size: 10px;
+  padding: 2em;
+}
+
 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
@@ -11172,6 +11177,30 @@ video {
 
 .back {
   transform: scale(1.5);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*! lightgallery - v1.6.4 - 2017-10-29
